@@ -7,10 +7,11 @@
 	<meta name="keywords" content="ties, skinny ties, necktie, buy ties" />
 	<meta name="description" content="Free shipping on all orders. $10 off $50 orders. Selling trendy skinny ties, tie bars and pocket squares since 1971." />
 	<link href="https://fonts.googleapis.com/css?family=Encode+Sans:300,400,500,600" rel="stylesheet" />
+	<link rel="stylesheet" href="js/lib/owlcarousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="js/lib/owlcarousel/owl.theme.default.min.css">
 	<link rel="icon" type="image/png" href="img/favicon.png" />
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
-	<script src="js/jquery-3.3.1.min.js"></script>
 	<link rel="stylesheet" href="css/app.css" />
 	<title>Skinny Ties | Segunda tarea del entrenamiento de CSS y Sass</title>
 </head>
@@ -108,8 +109,8 @@
 	<!-- Nav end -->
 
 	<!-- Header start -->
-	<header class="primary">
-		<div class="tie-slider">
+	<header class="header">
+		<div class="tie-slider owl-carousel">
 			<figure class="tie">
 				<img src="img/ties/black.jpg" alt="Black tie">
 				<figcaption>Black</figcaption>
@@ -143,7 +144,7 @@
 				<figcaption>Silk</figcaption>
 			</figure>
 			<figure class="tie">
-				<img src="img/ties/stripped.jpg" alt="Stripped tie">
+				<img src="img/ties/striped.jpg" alt="Striped tie">
 				<figcaption>Stripped</figcaption>
 			</figure>
 		</div>
@@ -158,18 +159,24 @@
 
 		<!-- Products preview start -->
 		<div class="products-preview">
-			<div class="product">
+			<figure class="product">
 				<img src="img/main/tie-bars.jpg" alt="Tie bars" />
-				<h3>Tie Bars</h3>
-			</div>
-			<div class="product">
+				<figcaption>
+					<h3>Tie Bars</h3>
+				</figcaption>
+			</figure>
+			<figure class="product">
 				<img src="img/main/solid-satin.jpg" alt="Solid satin tie" />
-				<h3>Solid Satin</h3>
-			</div>
-			<div class="product">
+				<figcaption>
+					<h3>Solid Satin</h3>
+				</figcaption>
+			</figure>
+			<figure class="product">
 				<img src="img/main/popular.jpg" alt="Gray tie" />
-				<h3>Popular</h3>
-			</div>
+				<figcaption>
+					<h3>Popular</h3>
+				</figcaption>
+			</figure>
 		</div>
 		<!-- Products preview end -->
 
@@ -287,5 +294,8 @@
 	</footer>
 	<!-- Footer end -->
 
+	<script src="js/lib/jquery-3.3.1.min.js"></script>
+	<script src="js/lib/owlcarousel/owl.carousel.min.js"></script>
+	<script src="js/app.js"></script>
 </body>
 </html>

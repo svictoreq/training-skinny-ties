@@ -34,7 +34,6 @@
 	flex-direction: column;
 	height: 110px;
 	background: white;
-	z-index: 1;
 
 	.main-content.mobile {
 		display: flex;
@@ -66,6 +65,7 @@
 	.bottom-divider {
 		height: 5px;
 		background: url('../img/divider.png') repeat-x;
+		z-index: 2;
 	}
 }
 
@@ -95,6 +95,67 @@
 		.icon.mobile {
 			color: $invisible-black;
 			font-size: 8px;
+		}
+	}
+}
+
+.header {
+	position: relative;
+	top: -5px;
+	margin: 0;
+	margin-bottom: 50px;
+	background: rgba(0,0,0,0.04);
+
+	.tie-slider {
+		margin-bottom: 55px;
+	}
+
+	figure {
+		margin: 0 18px;
+
+		img {
+			width: 75px !important;
+			height: 155px;
+			margin-bottom: 15px;
+		}
+
+		figcaption {
+			text-align: center;
+			tansition: all 0.2s ease;
+		}
+	}
+
+	.headline {
+		display: grid;
+		grid-template-columns: 55px 1fr 55px;
+
+		h1 {
+			margin: 0;
+			margin-bottom: 45px;
+			text-align: center;
+			font-size: 26px;
+			line-height: 28px;
+			font-weight: 400;
+		}
+
+		button {
+			width: 40px;
+			height: 60px;
+			background: $light-grey;
+			transition: all 0.3s ease;
+
+			&.owl-prev {
+				border-radius: 0 5px 5px 0;
+			}
+
+			&.owl-next {
+				border-radius: 5px 0 0 5px;
+				margin-left: auto;
+			}
+
+			img {
+				height: 27px;
+			}
 		}
 	}
 }

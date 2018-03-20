@@ -25,3 +25,16 @@
 		}
 	}
 }
+
+.headline {
+	button {
+		&.disabled {
+			opacity: 0.25;
+		}
+
+		&:active {
+			width: 50px;
+			background: $blue;
+		}
+	}
+}
