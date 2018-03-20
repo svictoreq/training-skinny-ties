@@ -1,0 +1,21 @@
+@import 'variables';
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Encode Sans', sans-serif;
+	color: $black;
+}
+
+a {
+	color: $blue;
+}
+
+img {
+	height: 100%;
+	width: 100%;
+}
+
+button {
+	border: none;
+}

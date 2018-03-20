@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta name="keywords" content="ties, skinny ties, necktie, buy ties">
-	<meta name="description" content="Free shipping on all orders. $10 off $50 orders. Selling trendy skinny ties, tie bars and pocket squares since 1971.">
-	<link href="https://fonts.googleapis.com/css?family=Encode+Sans:300,400,500,600" rel="stylesheet">
-	<link rel="icon" type="image/png" href="img/favicon.png">
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<meta name="keywords" content="ties, skinny ties, necktie, buy ties" />
+	<meta name="description" content="Free shipping on all orders. $10 off $50 orders. Selling trendy skinny ties, tie bars and pocket squares since 1971." />
+	<link href="https://fonts.googleapis.com/css?family=Encode+Sans:300,400,500,600" rel="stylesheet" />
+	<link rel="icon" type="image/png" href="img/favicon.png" />
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
 	<script src="js/jquery-3.3.1.min.js"></script>
-	<link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet" href="css/app.css" />
 	<title>Skinny Ties | Segunda tarea del entrenamiento de CSS y Sass</title>
 </head>
 
@@ -19,23 +19,71 @@
 	<div class="top-promotion">
 		<a href="#" class="promotion">
 			<span class="name">Free Shipping!</span>
-			<span class="description-1">$10 off every $50 order!</span>
-			<span class="description-2">$20 off every $100 order!</span>
-			<span class="description-3">$30 off every $150 order!</span>
+			<span class="description mobile">Plus $10 off $50 order!</span>
+			<span class="description">$10 off every $50 order!</span>
+			<span class="description">$20 off every $100 order!</span>
+			<span class="description">$30 off every $150 order!</span>
 		</a>
 	</div>
 
 	<!-- Nav start -->
-	<nav class="primary">
+	<nav class="primary-nav">
+
+		<div class="main-content mobile">
+			<a href="index.html" class="logo">
+				<img src="img/logo-mobile.png">
+			</a>
+
+			<div class="others-container mobile">
+				<button class="cart">
+					<i class="fas fa-shopping-cart"></i>
+				</button>
+
+				<button class="account">
+					<i class="fas fa-user"></i>
+				</button>
+
+				<button class="search">
+					<i class="fas fa-search"></i>
+				</button>
+			</div>
+		</div>
+
+
 		<a href="index.html" class="logo"></a>
 
 		<!-- Nav list start -->
 		<ul class="nav-list">
-			<a href="#" class="nav-item">Collection</a>
-			<a href="#" class="nav-item">Color</a>
-			<a href="#" class="nav-item">Width</a>
-			<a href="#" class="nav-item">Fabric</a>
-			<a href="#" class="nav-item">Pattern</a>
+			<a href="#" class="nav-item">
+				<span>Collection</span>
+				<span class="icon mobile">
+					<i class="fas fa-caret-down"></i>
+				</span>
+			</a>
+			<a href="#" class="nav-item">
+				<span>Color</span>
+				<span class="icon mobile">
+					<i class="fas fa-caret-down"></i>
+				</span>
+			</a>
+			<a href="#" class="nav-item">
+				<span>Width</span>
+				<span class="icon mobile">
+					<i class="fas fa-caret-down"></i>
+				</span>
+			</a>
+			<a href="#" class="nav-item">
+				<span>Fabric</span>
+				<span class="icon mobile">
+					<i class="fas fa-caret-down"></i>
+				</span>
+			</a>
+			<a href="#" class="nav-item">
+				<span>Pattern</span>
+				<span class="icon mobile">
+					<i class="fas fa-caret-down"></i>
+				</span>
+			</a>
 		</ul>
 		<!-- Nav list end -->
 
@@ -53,9 +101,7 @@
 			</div>
 			<div class="account-container"></div>
 		</div>
-		<div class="bottom-divider">
-			<img src="img/divider.png">
-		</div>
+		<div class="bottom-divider"></div>
 		<!-- Cart, Search and Account container end -->
 
 	</nav>
@@ -63,7 +109,44 @@
 
 	<!-- Header start -->
 	<header class="primary">
-		<div class="tie-slider"></div>
+		<div class="tie-slider">
+			<figure class="tie">
+				<img src="img/ties/black.jpg" alt="Black tie">
+				<figcaption>Black</figcaption>
+			</figure>
+			<figure class="tie">
+				<img src="img/ties/blue.jpg" alt="Blue tie">
+				<figcaption>Blue</figcaption>
+			</figure>
+			<figure class="tie">
+				<img src="img/ties/collegiate.jpg" alt="Collegiate tie">
+				<figcaption>Collegiate</figcaption>
+			</figure>
+			<figure class="tie">
+				<img src="img/ties/cotton.jpg" alt="Cotton tie">
+				<figcaption>Cotton</figcaption>
+			</figure>
+			<figure class="tie">
+				<img src="img/ties/favorites.jpg" alt="Green tie">
+				<figcaption>Favorite</figcaption>
+			</figure>
+			<figure class="tie">
+				<img src="img/ties/graphic.jpg" alt="Graphic tie">
+				<figcaption>Graphic</figcaption>
+			</figure>
+			<figure class="tie">
+				<img src="img/ties/plaid.jpg" alt="Plaid tie">
+				<figcaption>Plaid</figcaption>
+			</figure>
+			<figure class="tie">
+				<img src="img/ties/silk.jpg" alt="Silk tie">
+				<figcaption>Silk</figcaption>
+			</figure>
+			<figure class="tie">
+				<img src="img/ties/stripped.jpg" alt="Stripped tie">
+				<figcaption>Stripped</figcaption>
+			</figure>
+		</div>
 		<div class="headline">
 			<h1>Start dressing better.</h1>
 		</div>
@@ -76,15 +159,15 @@
 		<!-- Products preview start -->
 		<div class="products-preview">
 			<div class="product">
-				<img src="img/main/tie-bars.jpg" alt="Tie bars">
+				<img src="img/main/tie-bars.jpg" alt="Tie bars" />
 				<h3>Tie Bars</h3>
 			</div>
 			<div class="product">
-				<img src="img/main/solid-satin.jpg" alt="Solid satin tie">
+				<img src="img/main/solid-satin.jpg" alt="Solid satin tie" />
 				<h3>Solid Satin</h3>
 			</div>
 			<div class="product">
-				<img src="img/main/popular.jpg" alt="Gray tie">
+				<img src="img/main/popular.jpg" alt="Gray tie" />
 				<h3>Popular</h3>
 			</div>
 		</div>
@@ -104,7 +187,7 @@
 		<div class="interaction-container">
 			<div class="interaction-item">
 				<h3>Weekly Pick</h3>
-				<img src="img/main/weekly-pick.jpg" alt="Weekly picked tie">
+				<img src="img/main/weekly-pick.jpg" alt="Weekly picked tie" />
 				<a href="#">
 					2.25" Yellow Blue and White Woven Skinny Tie
 				</a>
@@ -131,12 +214,12 @@
 
 			<div class="interaction-item">
 				<h3>Style Guide</h3>
-				<img src="img/main/style-guide.jpg" alt="Smiling gentleman">
+				<img src="img/main/style-guide.jpg" alt="Smiling gentleman" />
 			</div>
 		</div>
 		<!-- Interaction end -->
 
-	<!-- Main end -->
+		<!-- Main end -->
 	</main>
 
 	<!-- Footer start -->

@@ -1,0 +1,27 @@
+@import 'variables';
+@import 'base';
+@import 'components';
+
+.promotion {
+	.description:not(.mobile) {
+		display: none;
+	}
+}
+
+.primary-nav {
+	.others-container:not(.mobile) {
+		display: none;
+	}
+}
+
+.nav-list {
+	.nav-item:first-child{
+		padding-left: 0;
+	}
+
+	.nav-item {
+		span:not(.icon) {
+			margin-top: 4px;
+		}
+	}
+}
