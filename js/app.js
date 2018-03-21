@@ -17,5 +17,15 @@ $(document).ready(function() {
 				items: 9
 			}
 		}
-	})
+	});
+
+	let slideBttnTimeout;
+
+	$('button[class*="owl"]').on('click', function() {
+		clearTimeout(slideBttnTimeout);
+		$(this).addClass('clicked');
+		slideBttnTimeout = setTimeout(() => {
+			$(this).removeClass('clicked');
+		}, 1000);
+	});
 });

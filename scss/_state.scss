@@ -30,9 +30,15 @@
 			opacity: 0.25;
 		}
 
-		&:active {
+		&.clicked {
 			width: 50px;
 			background: $blue;
+		}
+
+		&:active {
+			img {
+				opacity: 0.50;
+			}
 		}
 	}
 }
