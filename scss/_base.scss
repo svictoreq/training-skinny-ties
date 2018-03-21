@@ -9,6 +9,7 @@ body {
 
 a {
 	color: $blue;
+	text-decoration: none;
 }
 
 img {
@@ -19,6 +20,7 @@ img {
 button {
 	border: none;
 	outline: none;
+	font-family: 'Encode Sans', sans-serif;
 }
 
 figure {

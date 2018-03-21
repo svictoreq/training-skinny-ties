@@ -4,7 +4,7 @@ $(document).ready(function() {
 		margin: 0,
 		nav: true,
 		navContainer: '.headline',
-		navText: ['<img src="img/prev.svg" />', '<img src="img/next.svg" />'],
+		navText: ['<img src="img/icons/prev.svg" />', '<img src="img/icons/next.svg" />'],
 		dots: false,
 		responsive: {
 			0: {
