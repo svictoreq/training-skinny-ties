@@ -27,31 +27,31 @@
 		.main-row {
 			display: flex;
 			border-bottom: 1px solid #F0F0F0;
+		}
 
-			.logo {
-				display: block;
-				margin-right: auto;
-				width: 180px;
-				height: 56px;
-				background: url('../img/logo-mobile.png');
-				background-size: 180px 56px;
-			}
+		.logo {
+			display: block;
+			margin-right: auto;
+			width: 180px;
+			height: 56px;
+			background: url('../img/logo-mobile.png');
+			background-size: 180px 56px;
+		}
 
-			.others-container.mobile {
-				display: flex;
-				width: 138px;
+		.others-container.mobile {
+			display: flex;
+			width: 138px;
+		}
 
-				button {
-					background: none;
-					width: 45px;
-					height: 100%;
-					border-left: 1px solid #F0F0F0;
+		button {
+			background: none;
+			width: 45px;
+			height: 100%;
+			border-left: 1px solid #F0F0F0;
 
-					img {
-						height: 14px;
-						width: 14px;
-					}
-				}
+			img {
+				height: 14px;
+				width: 14px;
 			}
 		}
 	}
@@ -59,7 +59,6 @@
 	.nav-list {
 		max-width: 100%;
 		display: flex;
-		justify-content: center;
 		margin: 0;
 		padding: 5px 7px;
 		font-size: 15px;
