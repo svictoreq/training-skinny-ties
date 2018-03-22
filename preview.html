@@ -11,161 +11,120 @@
 	<link rel="stylesheet" href="js/lib/owlcarousel/owl.theme.default.min.css">
 	<link rel="icon" type="image/png" href="img/favicon.png" />
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="css/app.css" />
-	<title>Skinny Ties | Segunda tarea del entrenamiento de CSS/Sass</title>
+	<title>Skinny Ties | Segunda tarea del entrenamiento de CSS y Sass</title>
 </head>
+
 <body>
-	<!-- Promotion start -->
-	<a href="#" class="promotion">
-		<span class="name">Free Shipping!</span>
-		<span class="description mobile">Plus $10 off %50 order!</span>
-		<span class="description">$10 off every $50 order!</span>
-		<span class="description">$20 off every $100 order!</span>
-		<span class="description">$30 off every $150 order!</span>
-	</a>
-	<!-- Promotion end -->
+	<div class="top-promotion">
+		<a href="#" class="promotion">
+			<span class="name">Free Shipping!</span>
+			<span class="description mobile">Plus $10 off $50 order!</span>
+			<span class="description">$10 off every $50 order!</span>
+			<span class="description">$20 off every $100 order!</span>
+			<span class="description">$30 off every $150 order!</span>
+		</a>
+	</div>
 
-	<nav class="nav-primary">
+	<!-- Nav start -->
+	<nav class="primary-nav">
 
-		<!-- Navbar mobile start -->
-		<div class="layout mobile">
-			<div class="main-row">
-				<a class="logo"></a>
+		<div class="main-content mobile">
+			<a href="index.html" class="logo">
+				<img src="img/logo-mobile.png">
+			</a>
 
-				<div class="others-container mobile">
-					<button class="cart">
-						<img src="img/icons/cart.svg" alt="Shopping cart icon" />
-					</button>
+			<div class="others-container mobile">
+				<button class="cart">
+					<i class="fas fa-shopping-cart"></i>
+				</button>
 
-					<button class="account">
-						<img src="img/icons/user.svg" alt="User icon" />
-					</button>
+				<button class="account">
+					<i class="fas fa-user"></i>
+				</button>
 
-					<button class="search">
-						<img src="img/icons/search.svg" alt="Magnifying glass icon" />
-					</button>
-				</div>
-
-				<div class="others-container tablet">
-					<div class="account-container">
-						<a href="#">SIGN IN</a>
-						<a href="#">REGISTER</a>
-					</div>
-
-					<div class="info-container">
-						<a href="#" class="cart">
-							<img src="img/icons/cart.svg" />
-							<span>Cart</span>
-							<span class="cart-counter">0</span>
-						</a>
-
-						<span class="search-container">
-							<img src="img/icons/search.svg" />
-							<input type="search" name="search" id="search" />
-						</span>
-					</div>
-				</div>
+				<button class="search">
+					<i class="fas fa-search"></i>
+				</button>
 			</div>
-
-			<!-- Nav list start -->
-			<ul class="nav-list">
-				<a href="#" class="nav-item">
-					<span>Collection</span>
-					<span class="icon mobile">
-						<img src="img/icons/drop-down.svg" />
-					</span>
-				</a>
-				<a href="#" class="nav-item">
-					<span>Color</span>
-					<span class="icon mobile">
-						<img src="img/icons/drop-down.svg" />
-					</span>
-				</a>
-				<a href="#" class="nav-item">
-					<span>Width</span>
-					<span class="icon mobile">
-						<img src="img/icons/drop-down.svg" />
-					</span>
-				</a>
-				<a href="#" class="nav-item">
-					<span>Fabric</span>
-					<span class="icon mobile">
-						<img src="img/icons/drop-down.svg" />
-					</span>
-				</a>
-				<a href="#" class="nav-item">
-					<span>Pattern</span>
-					<span class="icon mobile">
-						<img src="img/icons/drop-down.svg" />
-					</span>
-				</a>
-			</ul>
-			<!-- Nav list end -->
 		</div>
-		<!-- Navbar mobile end -->
 
-		<!-- Navbar desktop start -->
-		<div class="layout-desktop">
-			<a href="index.html" class="logo"></a>
-
-			<!-- Nav list start -->
-			<ul class="nav-list">
-				<a href="#" class="nav-item">
-					<span>Collection</span>
-					<span class="icon mobile">
-						<i class="fas fa-caret-down"></i>
-					</span>
-				</a>
-				<a href="#" class="nav-item">
-					<span>Color</span>
-					<span class="icon mobile">
-						<i class="fas fa-caret-down"></i>
-					</span>
-				</a>
-				<a href="#" class="nav-item">
-					<span>Width</span>
-					<span class="icon mobile">
-						<i class="fas fa-caret-down"></i>
-					</span>
-				</a>
-				<a href="#" class="nav-item">
-					<span>Fabric</span>
-					<span class="icon mobile">
-						<i class="fas fa-caret-down"></i>
-					</span>
-				</a>
-				<a href="#" class="nav-item">
-					<span>Pattern</span>
-					<span class="icon mobile">
-						<i class="fas fa-caret-down"></i>
-					</span>
-				</a>
-			</ul>
-			<!-- Nav list end -->
-
+		<div class="main-content tablet">
+			<a href="index.html" class="logo">
+				<img src="img/logo-tablet.png">
+			</a>
 			<div class="others-container tablet">
-				<div class="account-container">
-					<a href="#">SIGN IN</a>
-					<a href="#">REGISTER</a>
-				</div>
-
-				<div class="info-container">
+				<div class="cart-container">
 					<a href="#" class="cart">
-						<img src="img/icons/cart.svg" />
-						<span>Cart</span>
-						<span class="cart-counter">0</span>
+						<span>
+							Cart
+						</span>
 					</a>
-
-					<span class="search-container">
-						<img src="img/icons/search.svg" />
-						<input type="search" name="search" id="search" />
-					</span>
 				</div>
+				<div class="search-container">
+					<input type="search" name="search" id="search">
+				</div>
+				<div class="account-container"></div>
 			</div>
 		</div>
-		<!-- Navbar desktop end -->
+
+		<a href="index.html" class="logo"></a>
+
+		<!-- Nav list start -->
+		<ul class="nav-list">
+			<a href="#" class="nav-item">
+				<span>Collection</span>
+				<span class="icon mobile">
+					<i class="fas fa-caret-down"></i>
+				</span>
+			</a>
+			<a href="#" class="nav-item">
+				<span>Color</span>
+				<span class="icon mobile">
+					<i class="fas fa-caret-down"></i>
+				</span>
+			</a>
+			<a href="#" class="nav-item">
+				<span>Width</span>
+				<span class="icon mobile">
+					<i class="fas fa-caret-down"></i>
+				</span>
+			</a>
+			<a href="#" class="nav-item">
+				<span>Fabric</span>
+				<span class="icon mobile">
+					<i class="fas fa-caret-down"></i>
+				</span>
+			</a>
+			<a href="#" class="nav-item">
+				<span>Pattern</span>
+				<span class="icon mobile">
+					<i class="fas fa-caret-down"></i>
+				</span>
+			</a>
+		</ul>
+		<!-- Nav list end -->
+
+		<!-- Cart, Search and Account container start -->
+		<div class="others-container">
+			<div class="cart-container">
+				<a href="#" class="cart">
+					<span>
+						Cart
+					</span>
+				</a>
+			</div>
+			<div class="search-container">
+				<input type="search" name="search" id="search">
+			</div>
+			<div class="account-container"></div>
+		</div>
+		<div class="bottom-divider"></div>
+		<!-- Cart, Search and Account container end -->
+
 	</nav>
-	<div class="divider-perforated"></div>
+	<!-- Nav end -->
 
 	<!-- Header start -->
 	<header class="header">
