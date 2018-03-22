@@ -198,4 +198,50 @@
 	input[type="email"]:focus {
 		border-color: $blueish-grey;
 	}
+
+	@media screen and (min-width: 768px) {
+		max-width: 100%;
+		padding: 0 30px;
+		display: grid;
+		grid-template-columns: repeat(2, 46%);
+		grid-gap: 8%;
+	}
+}
+
+footer {
+	@media screen and (min-width: 768px) {
+		padding: 30px;
+
+		.footer-nav {
+			display: flex;
+
+			.footer-item {
+				width: 25%;
+			}
+
+			.footer-list {
+				display: flex;
+				flex-direction: column;
+			}
+		}
+
+		.contact-us {
+			max-width: 45%;
+			position: relative;
+
+			button {
+				position: absolute;
+				bottom: 15px;
+				right: 15px;
+			}
+		}
+
+		.copyright {
+			display: flex;
+
+			span {
+				margin-right: 0.3em;
+			}
+		}
+	}
 }

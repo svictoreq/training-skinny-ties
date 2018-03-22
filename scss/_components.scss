@@ -151,6 +151,11 @@
 	}
 }
 
+main {
+	position: relative;
+	height: fit-content;
+}
+
 .products-preview {
 	padding: 0 15px;
 
@@ -306,7 +311,7 @@ footer {
 	background: $pale-white;
 
 	.footer-item {
-		font-size: 14px;
+		font-size: 13px;
 		margin-bottom: 15px;
 
 		.footer-list {
