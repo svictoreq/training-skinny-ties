@@ -175,6 +175,25 @@
 	}
 }
 
+.products-preview {
+	@media screen and (min-width: 768px) {
+		padding: 0 30px;
+		display: flex;
+		justify-content: space-between;
+
+		.product {
+			width: 32%;
+			border: 1px solid $invisible-black;
+		}
+	}
+}
+
+.hook-container {
+	@media screen and (min-width: 768px) {
+		.hook { font-size: 29px; }
+	}
+}
+
 .interaction-container {
 	input[type="email"]:focus {
 		border-color: $blueish-grey;
