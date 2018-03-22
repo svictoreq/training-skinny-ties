@@ -6,6 +6,7 @@
 .nav-primary {
 	.layout {
 		&:not(.mobile) { display: none; }
+		.others-container:not(.mobile) { display: none}
 	}
 }
 
