@@ -22,6 +22,11 @@ $(document).ready(function() {
 	let slideBttnTimeout;
 
 	$('button[class*="owl"]').on('click', function() {
+		if ($(this).hasClass('owl-next')) {
+			$('button.owl-prev').removeClass('clicked');
+		} else {
+			$('button.owl-next').removeClass('clicked');
+		}
 		clearTimeout(slideBttnTimeout);
 		$(this).addClass('clicked');
 		slideBttnTimeout = setTimeout(() => {
