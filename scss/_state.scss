@@ -147,21 +147,29 @@
 		}
 	}
 }
-
-.headline {
-	button {
-		&.disabled {
-			opacity: 0.25;
+.header {
+	.headline {
+		h1 {
+			@media screen and (min-width: 768px) {
+				font-size: 42px;
+				line-height: 60px;
+				margin-bottom: 50px
+			}
 		}
+		button {
+			&.disabled {
+				opacity: 0.25;
+			}
 
-		&.clicked {
-			width: 50px;
-			background: $blue;
-		}
+			&.clicked {
+				width: 50px;
+				background: $blue;
+			}
 
-		&:active {
-			img {
-				opacity: 0.50;
+			&:active {
+				img {
+					opacity: 0.50;
+				}
 			}
 		}
 	}
