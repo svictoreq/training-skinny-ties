@@ -229,7 +229,8 @@ footer {
 		grid-template-columns: repeat(2, 1fr);
 
 		.footer-nav {
-			.footer-item { width: 21%; font-size: 14px; }
+			.footer-item { width: 23%; font-size: 14px; }
+			.footer-list-item { height: 23px; }
 		}
 
 		.contact-us {
