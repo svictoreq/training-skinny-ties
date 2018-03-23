@@ -1,0 +1,358 @@
+@import variables
+
+.promotion
+  display: flex
+  align-items: center
+  max-width: 100%
+  padding: 5px 15px
+  background: $orange
+  color: white
+  font-size: 14px
+  text-shadow: 0 1px 0 $invisible-black
+  transition: background 0.1s
+
+  .name
+    padding: 0 8px
+    margin-right: 15px
+    border-radius: 3px
+    letter-spacing: 1px
+    font-size: 11px
+    line-height: 24px
+    text-transform: uppercase
+    background: $invisible-black
+
+.nav-primary
+  position: relative
+
+  .layout.mobile
+    .main-row
+      display: flex
+      border-bottom: 1px solid #F0F0F0
+
+    .logo
+      display: block
+      margin-right: auto
+      width: 180px
+      height: 56px
+      background: url("../img/logo-mobile.png")
+      background-size: 180px 56px
+
+    .others-container.mobile
+      display: flex
+      width: 138px
+
+    button
+      background: none
+      width: 45px
+      height: 100%
+      border-left: 1px solid #F0F0F0
+
+      img
+        height: 14px
+        width: 14px
+
+  .nav-list
+    max-width: 100%
+    display: flex
+    margin: 0
+    padding: 5px 7px
+    font-size: 15px
+
+    .nav-item
+      box-sizing: border-box
+      padding: 0 8px
+      height: 36px
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      color: $black
+
+      img
+        color: #E0E0E0
+        height: 10px
+        width: 10px
+
+.divider-perforated
+  z-index: 2
+  position: absolute
+  bottom: -5px
+  left: 0
+  width: 100%
+  height: 5px
+  background: url("../img/divider.png") repeat-x
+
+.header
+  margin: 0
+  margin-bottom: 50px
+  background: rgba(0, 0, 0, 0.04)
+  overflow: hidden
+
+  .tie-slider
+    margin-bottom: 55px
+
+    &.no-carousel
+      width: 100%
+      margin:
+        left: auto
+        right: auto
+      display: flex
+      justify-content: center
+
+      img
+        position: relative
+        top: 0
+        transition: all 0.2s ease
+
+  figure
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin: 0 18px
+
+    img
+      width: 75px !important
+      height: 155px
+      margin-bottom: 15px
+
+    figcaption
+      text-align: center
+      width: 75px
+
+  .headline
+    display: flex
+    justify-content: center
+    position: relative
+
+    .owl-controls
+      position: absolute
+      width: 100%
+      height: 100%
+      display: flex
+      justify-content: space-between
+
+    h1
+      margin: 0
+      margin-bottom: 45px
+      text-align: center
+      font-size: 26px
+      line-height: 1.4em
+      font-weight: 400
+
+    button
+      width: 40px
+      height: 60px
+      background: $light-grey
+      transition: all 0.3s ease
+
+      &.owl-prev
+        border-radius: 0 5px 5px 0
+
+      &.owl-next
+        border-radius: 5px 0 0 5px
+        margin-left: auto
+
+      img
+        height: 27px
+
+main
+  position: relative
+  height: fit-content
+
+.products-preview
+  padding: 0 15px
+
+  .product
+    position: relative
+    margin-bottom: 30px
+
+  figcaption
+    position: absolute
+    top: 10px
+    right: 15px
+    color: #202020
+    font-size: 17px
+    text-align: right
+
+    h3
+      margin: 0
+      font-weight: 700
+
+.hook-container
+  padding: 15px
+  margin-bottom: 50px
+
+  .hook
+    margin: 0
+    margin-bottom: 15px
+    font:
+      weight: 200
+      style: italic
+      size: 22px
+    line-height: 1.6em
+    text-align: center
+
+  a
+    display: inline-block
+    text:
+      decoration: none
+      transform: uppercase
+      align: center
+    width: 100%
+    font-size: 16px
+    letter-spacing: 3px
+
+.cross-divider
+  background: url("../img/cross-divider.png")
+  height: 7px
+  margin-bottom: 38px
+
+.interaction-container
+  padding: 0 15px
+
+  .interaction-item
+    margin-bottom: 40px
+    display: flex
+    flex-direction: column
+
+    .title
+      h3
+        font-size: 18px
+        margin: 0
+        margin-bottom: 0.5em
+
+    .content
+      font-size: 13px
+      line-height: 1.75em
+
+      p
+        margin: 0
+        margin-bottom: 1em
+
+      figcaption
+        height: 100%
+        width: 47.5%
+        margin-left: auto
+
+      &.rows
+        display: flex
+        flex-direction: column
+
+      &.columns
+        display: flex
+        width: 100%
+        flex-direction: row
+
+        img
+          box-sizing: border-box
+          width: 50%
+          border: 1px solid $invisible-black
+
+    .social-media-icon
+      margin-right: 10px
+
+      img
+        height: 35px
+        width: 35px
+
+    input[type="email"]
+      outline: none
+      box-sizing: border-box
+      margin: 4px
+      margin-bottom: 15px
+      padding: 0 8px
+      height: 34px
+      width: 200px
+      border: 1px solid $light-grey
+      border-radius: 2px
+      box-shadow: $pale-white 0 0 0 4px
+      font-size: 14px
+
+      &::placeholder
+        color: $translucent-black
+
+    .subscribe
+      width: fit-content
+      padding: 0.6em 10px
+      border-radius: 3px
+      background: $blue
+      font-size: 11px
+
+      a
+        color: white
+        text-transform: uppercase
+
+footer
+  position: relative
+  padding: 32px 15px 30px
+  background: $pale-white
+
+  .footer-item
+    font-size: 13px
+    margin-bottom: 15px
+
+    .footer-list
+      margin: 0
+      padding: 0
+      display: flex
+      color: #909090
+      list-style: none
+
+      .footer-list-item
+        margin-right: 10px
+
+        a
+          color: #909090
+
+    h4
+      margin: 0
+      margin-bottom: 0.5em
+
+  .contact-us
+    box-sizing: border-box
+    display: flex
+    flex-direction: column
+    margin: 30px 0
+    padding: 15px
+    max-width: 227px
+    background: $blueish-grey
+    border: 1px solid rgba(0, 0, 0, 0.1)
+    border-radius: 3px
+    color: white
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3)
+
+    h2
+      margin: 0
+      margin-bottom: 0.5em
+      font:
+        size: 23px
+        style: italic
+        weight: 200
+
+    a
+      color: white
+      font:
+        size: 17px
+        weight: 200
+      line-height: 1.65em
+
+    button
+      margin-top: 18px
+      background: $blue
+      width: fit-content
+      padding: 6px 12px
+      border: 1px solid rgba(0, 0, 0, 0.15)
+      border-radius: 3px
+      font-size: 17px
+
+  .copyright
+    span
+      display: block
+      font-size: 11px
+      color: #909090
+      line-height: 1.45em
+
+      a
+        color: inherit
+        border-bottom: 1px solid
+        border-bottom-style: dotted

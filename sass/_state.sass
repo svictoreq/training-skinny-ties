@@ -1,0 +1,208 @@
+@import variables
+
+.promotion
+  &:hover
+    background: $blue
+
+  .description:not(.mobile)
+    display: none
+
+  @media screen and (min-width: 768px)
+    padding: 7px 30px
+
+    .description:not(.mobile)
+      display: block
+      margin-right: 1.3em
+
+    .description.mobile
+      display: none
+
+  @media screen and (min-width: 1150px)
+    padding: 7px 10%
+
+.nav-primary
+  .layout
+    &:not(.mobile)
+      display: none
+
+    .others-container:not(.mobile)
+      display: none
+
+    @media screen and (min-width: 768px)
+      .main-row
+        padding: 12px 30px
+
+        .logo
+          height: 64px
+          width: 223px
+          background: url("../img/logo-tablet.png")
+          background-size: contain
+
+        .others-container:not(.tablet)
+          display: none
+
+        .others-container.tablet
+          +others-container
+
+      .nav-list
+        padding: 14px 18px
+
+        .nav-item
+          font:
+            size: 26px
+            weight: 200
+          padding: 0 12px
+
+    @media screen and (min-width: 1150px)
+      padding: 0 10%
+
+      &:not(.desktop)
+        display: none
+
+      &.desktop
+        display: flex
+
+      .logo
+        width: 128px
+        height: 117px
+        background: url("../img/logo-desktop.png")
+        background-size: contain
+
+      .others-container:not(.mobile)
+        display: none
+
+      .others-container.desktop
+        +others-container
+
+        padding: 15px 0
+        padding-bottom: 43px
+
+      .nav-list
+        align-items: center
+        margin-left: 30px
+        margin-right: auto
+
+.header
+  .tie-slider
+    &.no-carousel
+      figure:hover img
+        top: -20px
+
+  .headline
+    h1
+      @media screen and (min-width: 768px)
+        font-size: 42px
+        line-height: 60px
+        margin-bottom: 50px
+
+    button
+      &.disabled
+        opacity: 0.25
+
+      &.clicked
+        width: 50px
+        background: $blue
+
+      &:active
+        img
+          opacity: 0.50
+
+.products-preview
+  @media screen and (min-width: 768px)
+    padding: 0 30px
+    display: flex
+    justify-content: space-between
+
+    .product
+      width: 32%
+      border: 1px solid $invisible-black
+
+  @media screen and (min-width: 1150px)
+    padding: 0 10%
+
+.hook-container
+  @media screen and (min-width: 768px)
+    .hook
+      font-size: 29px
+
+  @media screen and (min-width: 1150px)
+    margin: 75px 0
+
+    .hook
+      font-size: 34px
+
+.interaction-container
+  input[type="email"]:focus
+    border-color: $blueish-grey
+
+  @media screen and (min-width: 768px)
+    max-width: 100%
+    padding: 0 30px
+    display: grid
+    grid-template-columns: repeat(2, 46%)
+    grid-gap: 8%
+
+  @media screen and (min-width: 1150px)
+    display: flex
+    justify-content: space-between
+    padding: 0 10%
+
+    .interaction-item
+      width: 20%
+
+      .content
+        figcaption
+          width: 100%
+
+        &.columns
+          flex-direction: column
+
+          img
+            width: 100%
+
+footer
+  @media screen and (min-width: 768px)
+    padding: 30px
+
+    .footer-nav
+      display: flex
+
+      .footer-item
+        width: 25%
+
+      .footer-list
+        display: flex
+        flex-direction: column
+
+    .contact-us
+      max-width: 45%
+      position: relative
+
+      button
+        position: absolute
+        bottom: 15px
+        right: 15px
+
+    .copyright
+      display: flex
+
+      span
+        margin-right: 0.3em
+
+  @media screen and (min-width: 1150px)
+    padding: 32px 10%
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+
+    .footer-nav
+      .footer-item
+        width: 23%
+        font-size: 14px
+
+      .footer-list-item
+        height: 23px
+
+    .contact-us
+      min-width: 310px
+      margin: 0
+      margin-left: auto
