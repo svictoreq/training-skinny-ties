@@ -161,6 +161,30 @@
 		grid-template-columns: repeat(2, 46%);
 		grid-gap: 8%;
 	}
+
+	@media screen and (min-width: 1150px) {
+		display: flex;
+		justify-content: space-between;
+		padding: 0 10%;
+
+		.interaction-item {
+			width: 20%;
+
+			.content {
+				figcaption {
+					width: 100%;
+				}
+
+				&.columns {
+					flex-direction: column;
+
+					img {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
 }
 
 footer {
@@ -197,6 +221,21 @@ footer {
 			span {
 				margin-right: 0.3em;
 			}
+		}
+	}
+	@media screen and (min-width: 1150px) {
+		padding: 32px 10%;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+
+		.footer-nav {
+			.footer-item { width: 21% }
+		}
+
+		.contact-us {
+			min-width: 310px;
+			margin: 0;
+			margin-left: auto;
 		}
 	}
 }
