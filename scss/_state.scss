@@ -130,11 +130,22 @@
 			border: 1px solid $invisible-black;
 		}
 	}
+
+	@media screen and (min-width: 1150px) {
+		padding: 0 10%;
+	}
 }
 
 .hook-container {
 	@media screen and (min-width: 768px) {
 		.hook { font-size: 29px; }
+	}
+
+	@media screen and (min-width: 1150px) {
+		margin: 75px 0;
+		.hook {
+			font-size: 34px;
+		}
 	}
 }
 
