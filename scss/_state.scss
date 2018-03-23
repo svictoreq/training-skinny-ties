@@ -84,6 +84,14 @@
 	}
 }
 .header {
+	.tie-slider {
+		&.no-carousel {
+			figure:hover img {
+				top: -20px;
+			}
+		}
+	}
+
 	.headline {
 		h1 {
 			@media screen and (min-width: 768px) {
