@@ -62,7 +62,7 @@
 			&.desktop { display: flex; };
 
 			.logo {
-				width: 128px;
+				min-width: 128px;
 				height: 117px;
 				background: url('../img/logo-desktop.png');
 				background-size: contain;
@@ -208,7 +208,7 @@ footer {
 			max-width: 45%;
 			position: relative;
 
-			button {
+			a.button {
 				position: absolute;
 				bottom: 15px;
 				right: 15px;

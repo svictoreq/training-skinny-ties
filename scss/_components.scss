@@ -69,10 +69,15 @@
 			padding: 0 8px;
 			height: 36px;
 			display: flex;
-			flex-direction: column;
 			align-items: center;
-			justify-content: center;
-			color: $black;
+
+			a {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				color: $black;
+			}
 
 			img {
 				color: #E0E0E0;
@@ -398,7 +403,7 @@ footer {
 			line-height: 1.65em;
 		}
 
-		button {
+		a.button {
 			margin-top: 18px;
 			background: $blue;
 			width: fit-content;
